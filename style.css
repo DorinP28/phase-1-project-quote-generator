@@ -24,3 +24,10 @@
     margin-bottom: 1rem;
     color: black;
   }
+
+  #author {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: right;
+    color: black;
+  }
