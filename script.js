@@ -68,3 +68,13 @@ function copyQuote() {
     const quote = document.getElementById("quote").textContent;
     const author = document.getElementById("author").textContent;
     const text = `${quote} - ${author}`;
+
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        alert("The quote has been copied to the clipboard.");
+      })
+      .catch(error => {
+        console.error(error);
+        alert("Failed to copy the quote to the clipboard.");
+      });
+  }
