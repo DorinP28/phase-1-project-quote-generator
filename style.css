@@ -60,6 +60,12 @@
     background-color: lightgrey;
   }
 
+  .button-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
   @media only screen and (max-width: 600px) {
     .container {
       background-size: cover;
