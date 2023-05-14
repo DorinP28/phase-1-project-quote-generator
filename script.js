@@ -63,4 +63,8 @@ const copyButton = document.getElementById("copy-button");
 // Add an eventListener to the copy button
 copyButton.addEventListener("click", copyQuote);
 
-
+// Define the copyQuote function
+function copyQuote() {
+    const quote = document.getElementById("quote").textContent;
+    const author = document.getElementById("author").textContent;
+    const text = `${quote} - ${author}`;
