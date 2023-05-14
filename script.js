@@ -26,5 +26,18 @@ function newQuote() {
 // Call the newQuote function when the page loads, to make sure site is not whiteboard with a button when user first open the page
 newQuote();
 
+// Resize the background image based on the browser size
+//  It took a while to find something that will work. 
+//  I understood the concept but still not sure how it works...
+window.addEventListener("resize", () => {
+    const image = new Image();
+    image.src = document.body.style.backgroundImage.replace(/url\(['"]?(.*?)['"]?\)/i, "$1");
+    const aspectRatio = image.width / image.height;
+    if (window.innerWidth / window.innerHeight > aspectRatio) {
+      document.body.style.backgroundSize = "auto 100%";
+    } else {
+      document.body.style.backgroundSize = "100% auto";
+    }
+  });
 
   
