@@ -42,6 +42,20 @@
     opacity: 0.7;
   }
 
+  #copy-button {
+    font-size: 1.2rem;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.3rem 0.8rem;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  
+  #copy-button:hover {
+    background-color: lightgrey;
+  }
+
   #new-quote-button:hover {
     background-color: lightgrey;
   }
@@ -49,6 +63,11 @@
   @media only screen and (max-width: 600px) {
     .container {
       background-size: cover;
+    }
+
+    #copy-button {
+        font-size: 1rem;
+      }
     }
   
     #quote-container p {
@@ -59,7 +78,7 @@
       font-size: 1rem;
     }
   }
-  
+
   /* Idk what to do to make this look ok on the phone. The pictures are
   big format and they are looking great on laptop, and on phone
   if the phone is horizontally placed. */
