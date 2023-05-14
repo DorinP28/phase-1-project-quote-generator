@@ -41,3 +41,7 @@
     cursor: pointer;
     opacity: 0.7;
   }
+
+  #new-quote-button:hover {
+    background-color: lightgrey;
+  }
