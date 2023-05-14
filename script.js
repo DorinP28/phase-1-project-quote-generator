@@ -40,4 +40,20 @@ window.addEventListener("resize", () => {
     }
   });
 
+  //and now on the phone no way to see the full picture.
+  //Add another eventListener for image to resize on page load.
+  
+window.addEventListener("load", () => {
+    const image = new Image();
+    image.src = document.body.style.backgroundImage.replace(/url\(['"]?(.*?)['"]?\)/i, "$1");
+    const aspectRatio = image.width / image.height;
+    if (window.innerWidth / window.innerHeight > aspectRatio) {
+      document.body.style.backgroundSize = "auto 100%";
+    } else {
+      document.body.style.backgroundSize = "100% auto";
+    }
+  });
+
+  //Now it is really weird that you see multiple copies of the picture
+  // on the phone mode.
   
