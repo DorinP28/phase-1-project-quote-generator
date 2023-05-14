@@ -23,5 +23,8 @@ function newQuote() {
       .catch(error => console.error(error));
   }
 
-  
+// Call the newQuote function when the page loads, to make sure site is not whiteboard with a button when user first open the page
+newQuote();
+
+
   
