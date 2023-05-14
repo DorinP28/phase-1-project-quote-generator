@@ -57,4 +57,10 @@ window.addEventListener("load", () => {
   //Now it is really weird that you see multiple copies of the picture
   // on the phone mode.
   
-  
+  // Copy Button link to html
+const copyButton = document.getElementById("copy-button");
+
+// Add an eventListener to the copy button
+copyButton.addEventListener("click", copyQuote);
+
+
