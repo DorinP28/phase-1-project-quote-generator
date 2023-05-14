@@ -57,3 +57,4 @@ window.addEventListener("load", () => {
   //Now it is really weird that you see multiple copies of the picture
   // on the phone mode.
   
+  

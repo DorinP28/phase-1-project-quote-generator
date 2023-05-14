@@ -46,3 +46,20 @@
     background-color: lightgrey;
   }
 
+  @media only screen and (max-width: 600px) {
+    .container {
+      background-size: cover;
+    }
+  
+    #quote-container p {
+      font-size: 1.5rem;
+    }
+  
+    #quote-container #author {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Idk what to do to make this look ok on the phone. The pictures are
+  big format and they are looking great on laptop, and on phone
+  if the phone is horizontally placed. */
